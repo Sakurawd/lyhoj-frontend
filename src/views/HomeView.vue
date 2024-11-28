@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <MdEditor :value="value" :handle-change="onChange" />
+  <CodeEdit />
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+<script setup lang="ts">
+import { ref } from "vue";
+import MdEditor from "@/components/MdEditor.vue";
+import CodeEdit from "@/components/CodeEdit.vue";
 
-export default defineComponent({
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-});
+const value = ref();
+
+const onChange = (v: string) => {
+  value.value = v;
+};
 </script>
