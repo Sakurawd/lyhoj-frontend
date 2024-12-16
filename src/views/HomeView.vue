@@ -6,7 +6,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import MdEditor from "@/components/MdEditor.vue";
-import CodeEdit from "@/components/CodeEdit.vue";
+import CodeEdit from "@/components/CodeEditor.vue";
 
 const value = ref();
 

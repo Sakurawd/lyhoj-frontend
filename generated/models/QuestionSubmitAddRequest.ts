@@ -8,4 +8,3 @@ export type QuestionSubmitAddRequest = {
   questionId?: number;
   userId?: number;
 };
-

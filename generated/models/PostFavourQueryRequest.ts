@@ -2,7 +2,8 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { PostQueryRequest } from './PostQueryRequest';
+import type { PostQueryRequest } from "./PostQueryRequest";
+
 export type PostFavourQueryRequest = {
     current?: number;
     pageSize?: number;

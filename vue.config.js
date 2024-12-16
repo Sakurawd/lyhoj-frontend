@@ -7,4 +7,3 @@ module.exports = defineConfig({
     config.plugin("monaco").use(new MonacoWebpackPlugin());
   },
 });
-
